@@ -22,6 +22,10 @@ Fig 3. Physical Circuit Diagram
 <div style="text-align: left">
   <img src="./assets/schematics/PhysicalCircuit.png" alt="logo" width="1000" />
 </div>
+Fig 4. Pinout Chart
+<div style="text-align: left">
+  <img src="./assets/schematics/Pinout.png" alt="logo" width="1000" />
+</div>
 
 # Source Code Overview
 <!-- This section should include information to describe the organization of the code base and highlight how the code connects. -->
