@@ -7,6 +7,8 @@ exclude: true
 <div style="text-align: left">
   <img src="./assets/img/Logo.png" alt="logo" width="100" />
 </div>
+
+
 # Project Abstract
 This website describes the design of a very confusing clock. Similar to traditional wall clocks, it has twelve numbers arranged around a panel, as well as minute and hour hands. However, the numbers 1 - 12 around the panel are randomized every hour, and the clock hands will always point to the correct numbers to tell the current time. See figure 1 below for details. 
 
