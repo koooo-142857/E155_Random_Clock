@@ -13,8 +13,7 @@ permalink: /doc/
   <img src="./assets/schematics/BlockDiagram.png" alt="logo" width="1000" />
 </div>
           Fig 2. Overall System Block Diagram
-          
-          
+# 
 The MCU generates a random array of numbers from 1 to 12 depicting where each number will go on the clock panel each hour. This information is sent to the FPGA by SPI. The FPGA uses a shift register to receive the information, and decodes it into a format suitable for the seven-segment displays. The MCU also takes the random array and encodes it into servo positions for the minute and hour hand, telling them where to turn as time passes. 
 # Source Code Overview
 <!-- This section should include information to describe the organization of the code base and highlight how the code connects. -->
