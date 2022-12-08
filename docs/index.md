@@ -48,4 +48,6 @@ What we have yet to finish:
 
 **Total cost: $0**
 
+# gallery
+
 
