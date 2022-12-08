@@ -34,4 +34,18 @@ What we have yet to finish:
   3. Adjust the brightness of the neopixel so that it is less disruptive to people trying to tell time on the clock. 
  
 # Major Components Used
+<!-- The bill of materials should include all the parts used in your project along with the prices and links.  -->
+
+| Item | Part Number | Quantity | Unit Price | Link |
+| ---- | ----------- | ----- | ---- | ---- |
+| dual seven-segment displays |  LTD6410AG | 12 | stockroom |  |
+| PNP transistor | 3906 | 24 | stockroom | |
+| 3 to 8 decoders | DM74LS139 | 5 | stockroom | |
+| microservos | SG90 | 2 | stockroom | |
+| neopixel strip | WS2812 | 1 | self-owned | | 
+| FPGA and MCU | iCE405K,STML432KC | 1,1 | given | | 
+
+
+**Total cost: $14.95**
+
 
