@@ -19,7 +19,7 @@ This website describes the design of a very confusing clock. Similar to traditio
 # Project Motivation
 The east dorm has a tradition to collect clocks of all sizes and types. We would like to add to their clock collection with a new fancy clock, where the numbers 1-12 on the clock are randomized in position every hour. For example, a regular clock always displays 12, 1, 2, 3…10, 11 starting at the top. Instead, we build a clock that randomizes each digit’s placement every hour. In the first hour, the digit might be 5,6,8,4… starting at the top, and next hour, this sequence will become randomized to maybe 11, 2, 4, 9…. Other than this, we include a minute and hour hand to the clock (controlled by servos), and they have to always point to the correct numbers representing the current time. For example, if the current time is 4:25, the hour hand and minute hand must point to 4 and 5, regardless of where these digits are. (See Figures 1 below for a demonstration). 
 
-# What we have and have not accomplished. 
+# What we Have and Have not Accomplished
 As of the project due date (12/8/22) we have successfully achieve the following goals vital to our project:
   1. Generated random clock number positions in the MCU using the onboard TRNG peripheral. 
   2. Sent these clock positions to the FPGA over SPI for decoding. 
