@@ -26,6 +26,7 @@ Fig 4. Pinout Chart
 <div style="text-align: left">
   <img src="./assets/schematics/Pinout.png" alt="logo" width="700" />
 </div>
+All signals labeled in Fig 3. can be found on Fig 4 when connecting the system together. The FPGA signal names are also contingent with the corresponding .sv files. 
 
 # Source Code Overview
 <!-- This section should include information to describe the organization of the code base and highlight how the code connects. -->
