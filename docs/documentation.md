@@ -8,16 +8,10 @@ permalink: /doc/
 <!-- Include images of the schematics for your system. They should follow best practices for schematic drawings with all parts and pins clearly labeled. You may draw your schematics either with a software tool or neatly by hand. -->
 
 
-
+Fig 2. Overall System Block Diagram
 <div style="text-align: left">
   <img src="./assets/schematics/BlockDiagram.png" alt="logo" width="1000" />
 </div>
-          Fig 2. Overall System Block Diagram
-
-
-
-
-
 
 
 
