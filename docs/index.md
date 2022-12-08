@@ -32,3 +32,6 @@ What we have yet to finish:
   1. Fine tune the servo parameters so that they always accurately point to the correct clock positions. 
   2. Assemble the breadboard circuit, the clock panel and the servo gearboxes into a compact, cohesive final product. 
   3. Adjust the brightness of the neopixel so that it is less disruptive to people trying to tell time on the clock. 
+ 
+# Major Components Used
+
