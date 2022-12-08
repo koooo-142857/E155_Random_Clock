@@ -27,6 +27,7 @@ As of the project due date (12/8/22) we have successfully achieve the following 
   4. Interfaced with a Neopixel Strip using the FPGA, so that it cycles through the colors of a rainbow. 
   5. Interfaced with two servos that point to specific locations over time, based on the random clock positions generated. 
   6. Built servo gearboxes and laser cut clock panels needed for the final assembly.
+  7. 
 What we have yet to finish: 
   1. Fine tune the servo parameters so that they always accurately point to the correct clock positions. 
   2. Assemble the breadboard circuit, the clock panel and the servo gearboxes into a compact, cohesive final product. 
