@@ -46,6 +46,6 @@ What we have yet to finish:
 | FPGA and MCU | iCE405K,STML432KC | 1,1 | given | | 
 
 
-**Total cost: $14.95**
+**Total cost: $0**
 
 
