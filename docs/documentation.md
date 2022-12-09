@@ -34,16 +34,16 @@ All signals labeled in Fig 3. can be found on Fig 4 when connecting the system t
 ***
 Fig 5. Decoder Circuit Diagram
 <div style="text-align: left">
-  <img src="../assets/schematics/Decoder.png" alt="logo" width="700" />
+  <img src="../assets/schematics/Decoder.png" alt="logo" width="700" /> 
 </div>
 
-
+The decoder module uses 3 physical decoder IC's as well as some AND, NOT gates to decode the 5 bit signal (en [4:0]) describing which LED display to enable. The output of the decoder module are 24 physical wires that connect to each seven-seg display's common anodes. In hindsight, this was unnecessary since the FPGA has 48 I/O pins, meaning without the physical decoding modules, we would only have used 36 of them. With the decoder module, we cut down this number to 17, freeing up more pins for further implementations should we choose to do so. 
 
 
 # Source Code Overview
 <!-- This section should include information to describe the organization of the code base and highlight how the code connects. -->
 
-The source code for the project is located in the Github repository [here](https://github.com/joshbrake/example-project-portfolio/tree/main/src).
+<!--The source code for the project is located in the Github repository [here](https://github.com/joshbrake/example-project-portfolio/tree/main/src). -->
 
 
 
