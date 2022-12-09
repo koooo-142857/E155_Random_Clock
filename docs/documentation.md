@@ -43,7 +43,7 @@ The decoder module uses 3 physical decoder IC's as well as some AND, NOT gates t
 # Source Code Overview
 <!-- This section should include information to describe the organization of the code base and highlight how the code connects. -->
 
-<!--The source code for the project is located in the Github repository [here](https://github.com/joshbrake/example-project-portfolio/tree/main/src). -->
+The source code for the project is located in the Github repository [here](https://github.com/koooo-142857/E155_Random_Clock/tree/main/src).
 
 
 
