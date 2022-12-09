@@ -56,10 +56,13 @@ What we have yet to finish:
 
 # Gallery
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170922.JPG" alt="logo" width="100" />
+  <img src="./assets/schematics/NeoPixels.JPG" alt="logo" width="1000" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170927.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_170922.JPG" alt="logo" width="1000" />
+</div>
+<div style="text-align: left">
+  <img src="./assets/img/20221208_170927.JPG" alt="logo" width="1000" />
 </div>
 
 <div style="text-align: left">
