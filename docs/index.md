@@ -56,20 +56,20 @@ What we have yet to finish:
 
 # Gallery
 <div style="text-align: left">
-  <img src="./assets/schematics/NeoPixels.JPG" alt="logo" width="1000" />
+  <img src="./assets/schematics/NeoPixels.jpg" alt="logo" width="1000" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170922.JPG" alt="logo" width="1000" />
+  <img src="./assets/img/20221208_170922.jpg" alt="logo" width="1000" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170927.JPG" alt="logo" width="1000" />
+  <img src="./assets/img/20221208_170927.jpg" alt="logo" width="1000" />
 </div>
 
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170642.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_170642.jpg" alt="logo" width="100" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221207_233316.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221207_233316.jpg" alt="logo" width="100" />
 </div>
 <div style="text-align: left">
   <img src="./assets/img/20221208_163001.JPG" alt="logo" width="100" />
