@@ -55,48 +55,46 @@ What we have yet to finish:
 **Total cost: $0**
 
 # Gallery
+
 <div style="text-align: left">
-  <img src="./assets/schematics/NeoPixels.jpg" alt="logo" width="1000" />
+  <img src="./assets/img/20221208_170922.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170922.jpg" alt="logo" width="1000" />
-</div>
-<div style="text-align: left">
-  <img src="./assets/img/20221208_170927.jpg" alt="logo" width="1000" />
+  <img src="./assets/img/20221208_170927.jpg" alt="logo" width="700" />
 </div>
 
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170642.jpg" alt="logo" width="100" />
+  <img src="./assets/img/20221208_170642.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221207_233316.jpg" alt="logo" width="100" />
+  <img src="./assets/img/20221207_233316.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_163001.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_163001.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_171021.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_171021.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_171133.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_171133.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170936.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_170936.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_171039.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_171039.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_171144.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_171144.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_171023.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_171023.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170944.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_170944.jpg" alt="logo" width="700" />
 </div>
 <div style="text-align: left">
-  <img src="./assets/img/20221208_170939.JPG" alt="logo" width="100" />
+  <img src="./assets/img/20221208_170939.jpg" alt="logo" width="700" />
 </div>
 # Source Code Overview
 
