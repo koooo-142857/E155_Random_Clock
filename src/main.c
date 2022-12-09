@@ -1,52 +1,107 @@
-
+// Ruth Mueller, Kevin Wan, E155 Random Clock
+// 12/08/22
+// rmueller@hmc.edu,kewan@hmc.edu
 int main(void) {
 
   counter_init();
   initialize();
 
-  char sec = 0;
-  char min = 0;
-  char hour = 0;
-  char old_hour_pos = 180;
+  char sec = 1;
+  char min = 1;
+  char hour = 1;
+  char index = 0;
+  int old_hour_pos = 180;  // even setting it like this got really weird
+  int old_min_pos = 180;
+  TIM16->CCR1 = 180; // min starting location
+  TIM15->CCR2 = 180; // hour starting location
 
 
   int min_angles[12] =  {290, 278, 270, 260, 250, 239, 230, 222, 214, 205, 190, 305};
-  int hr_angles[12] = {240, 247, 258, 269, 278, 287, 298, 309, 190, 207, 217, 227};
+  int hr_angles[12] = {195, 210, 224, 235, 249, 260, 272, 284, 300, 309, 325, 336};
 
-                      //  pos1, pos2, pos3, ...
-  int rand_sequence[12] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+                 //  pos1, pos2, pos3, ...
+  char *random;
 
-  int min_hand = 180; // minuite hand starting location
-  int hr_hand = 180; // hour hand starting location
-  for(volatile int i = 0; i< 100000; i++){}; // smooth mostion wait
-  TIM16->CCR1 = min_hand;
-  TIM15->CCR2 = hr_hand;
+
+  // initial clock
+  random = getSequence12_SPI(); // this function inits SPI inside of itself. And sends the SPI by itself. 
+       for(int i = 0; i<12; i++){printf("%d \n", random[i]);}// for debugging, check the random sequence
+  
+  for(int i = 0; i<12; i++){if(random[i] == hour)index = i;}
+  hour_AtoB(old_hour_pos, hr_angles[index]);// move hour hand
+  old_hour_pos = hr_angles[index];
+
+  for(int i = 0; i<12; i++){if(random[i] == min/5+1)index = i;}
+  printf("min calculation min%5+1 = %d", min/5+1);
+  min_AtoB(old_min_pos, min_angles[index]); // move minuite hand
+  old_min_pos = min_angles[index];
 
   // randomize
 
-  while(1) {
-     
-     
- 
-   
-    int angle_list[12] = {195, 210, 224, 235, 249, 260, 272, 284, 300, 309, 325, 336};
 
-    for(int i=0; i<11; i++){
-      CCR2_AtoB(angle_list[i], angle_list[i+1]);
-      CCR1_AtoB(angle_list[i], angle_list[i+1]);
-      for(volatile int i = 0; i< 100000; i++){}; 
-    }
-    CCR2_AtoB(angle_list[11], angle_list[0]);
-    CCR1_AtoB(angle_list[11], angle_list[0]);
-    for(volatile int i = 0; i< 100000; i++){}; 
-        
+  while(1) {
+    
+      
+
+      if(sec == 60){  //////////
+          
+          if(min % 5 == 0 && min != 60){
+            for(int i = 0; i<12; i++){if(random[i] == min/5+1)index = i;}
+            min_AtoB(old_min_pos, min_angles[index]); // move minuite hand
+            old_min_pos = min_angles[index];
+            printf("five min passed min: %d min_pos: %d\n", min, old_min_pos);
+          }
+
+          if(min == 60){
+            printf("an hour passed \n");
+            random = getSequence12_SPI(); // this function inits SPI inside of itself. And sends the SPI by itself. 
+            for(int i = 0; i<12; i++){printf("%d \n", random[i]);}// for debugging, check the random sequence
+            hour++;
+
+            if(hour + 1 == 13){
+              hour = 1;
+              printf("a day passed \n");
+            }
+          
+          min = 1;
+          // move min hand
+          // move hour hand
+            for(int i = 0; i<12; i++){if(random[i] == hour)index = i;}
+            hour_AtoB(old_hour_pos, hr_angles[index]);// move hour hand
+            old_hour_pos = hr_angles[index];
+            for(int i = 0; i<12; i++){if(random[i] == min/5+1)index = i;}
+            min_AtoB(old_min_pos, min_angles[index]); // move minuite hand
+            old_min_pos = min_angles[index];
+          }
+
+          sec = 1;
+          min++;
+      }
+      
+
+      delay_1s();
+      sec++;    
   }
+
+  
 }
 
-
+// looping hands test for testing the angles
+void loopHands(int hr_angles[12], int min_angles[12]){     
+    for(int i=0; i<11; i++){
+      hour_AtoB(hr_angles[i], hr_angles[i+1]);
+      min_AtoB(min_angles[i], min_angles[i+1]);
+      for(volatile int i = 0; i< 100000; i++){}; 
+    }
+    hour_AtoB(hr_angles[11], hr_angles[0]);
+    min_AtoB(min_angles[11], min_angles[0]);
+    for(volatile int i = 0; i< 100000; i++){}; 
+}
 
 void delay_1s(){
-  for(volatile int i = 0; i< 358000; i++){};
+  //for(volatile int i = 0; i< 358000; i++){}; // for default 4 MHz clock
+  //for(volatile long i = 0; i< 358000*20; i++){}; // divide by 60 for a minuite per second
+  for(volatile long i = 0; i< 358000*20 / 6; i++){}; // divide by 60 for a minuite per second
 }
 
 // this spins both hands together as a test
@@ -70,16 +125,16 @@ void spin_hands_test(){
 }
 
 // this slowly steps between two servo inputs
-void CCR2_AtoB(int start, int finish){
+void hour_AtoB(int start, int finish){
   if(finish > start){
     for(int j = 0; j<=(finish - start); j++){
-       for(volatile int i = 0; i< 10000; i++){}; // smooth mostion wait
+       for(volatile long i = 0; i< 10000*20; i++){}; // smooth mostion wait, mult by 20 for 80 MHz instead of 4MHz
        TIM15->CCR2 = start + j;
      }
   }
   else{  // when finish < start
     for(int j = 0; j<=(start - finish); j++){
-       for(volatile int i = 0; i< 10000; i++){}; // smooth mostion wait
+       for(volatile long i = 0; i< 10000*20; i++){}; // smooth mostion wait, mult by 20 for 80 MHz instead of 4MHz
        TIM15->CCR2 = start - j;
      }
   }
@@ -88,16 +143,16 @@ void CCR2_AtoB(int start, int finish){
 
 
 // this slowly steps between two servo inputs
-void CCR1_AtoB(int start, int finish){
+void min_AtoB(int start, int finish){
   if(finish > start){
     for(int j = 0; j<=(finish - start); j++){
-       for(volatile int i = 0; i< 10000; i++){}; // smooth mostion wait
+       for(volatile long i = 0; i< 10000*20; i++){}; // smooth mostion wait, mult by 20 for 80 MHz instead of 4MHz
        TIM16->CCR1 = start + j;
      }
   }
   else{  // when finish < start
     for(int j = 0; j<=(start - finish); j++){
-       for(volatile int i = 0; i< 10000; i++){}; // smooth mostion wait
+       for(volatile long i = 0; i< 10000*20; i++){}; // smooth mostion wait, mult by 20 for 80 MHz instead of 4MHz
        TIM16->CCR1 = start - j;
      }
   }
@@ -107,6 +162,11 @@ void CCR1_AtoB(int start, int finish){
 //______________________________________INITIALIZE_________________________________
 
 void initialize(){
+
+  // for random number generation
+  configureFlash();
+  configureClock(); // DON'T FORGET THESE!  takes a 4 MHz clk to 80 MHz clk
+  initRNG();
 
   // turning on the clock to let GPIOB work:
   RCC->AHB2ENR |= RCC_AHB2ENR_GPIOBEN; 
@@ -176,9 +236,13 @@ void counter_init(){
   // enable MOE
   TIM16->BDTR|= TIM_BDTR_MOE;
 
-  // prescaling to divide by 11
-  TIM16->PSC = 21;  
-  TIM15->PSC = 21; 
+  //// prescaling to divide by 11, for a clock of 4MHz (default)
+  //TIM16->PSC = 21;  
+  //TIM15->PSC = 21; 
+
+  // prescaling to divide by , for a clock of 80 MHz (when PLL is configured)
+  TIM16->PSC = 443;  // psc[15:0]
+  TIM15->PSC = 443; 
 
   // restarting at 200:
   TIM16->ARR = 3600;
