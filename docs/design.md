@@ -47,13 +47,29 @@ Lastly, the RST_control is responsible for creating the rainbow effect. The neop
 
 | time (s) | # of stops generated | LED dataframe | Rendered Color (G,R,B)|
 | --- | ---------- | ---------- | -------------- |
-| 0 | 0 | 0b0000 0000 1111 1111 0000 0000 | (0,255,0) |
+| 0 | 0 | 0b0000 0000 1111 1111 0000 0000 | (0,255,0) (Red) |
 | 0.8 | 1 | 0b0000 0001 1111 1110 0000 0000 | (1,254,0) |
 | 1.6 | 2 | 0b0000 0011 1111 1100 0000 0000 | (3,252,0) |
 | ... | ... | ... | ... |
 | 6.4 | 8 | 0b1111 1111 0000 0000 0000 0000 | (255,0,0) (Green!) |
 
+Hence, given enough time, the colors on the neopixels will have cycled through the rainbow!
 
+# New Hardware: Neopixel Stripe
+Datasheet: https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+ 
+Fig. 10 Neopixel Stripes in our Project
+<div style="text-align: left">
+  <img src="./assets/img/20221207_233316.jpg" alt="logo" width="700" />
+</div>
+ 
+Fig. 11 Neopixel diagrams
+
+<div style="text-align: left">
+  <img src="./assets/schematics/NeoData.png" alt="logo" width="700" />
+</div>
+ 
+At its heart, the neopixel stripe is a string of LED groups, where each LED group is composed of a red, green and blue LED. It takes a very specific data format to generate chormatic colors on each LED group. The color at each group is cascaded from the previous group. This results in a huge range of possible patterns on these stripes. For our purpose, we only need the whole stripe to generate the same color, but that color will change over time. For the specifics of the Neopixel operation, refer to the Neopixel Driver section in this page for a quick look, or the datasheet for in-depth details. 
 
 
 
