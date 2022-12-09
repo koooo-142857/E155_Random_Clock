@@ -40,7 +40,7 @@ What we have yet to finish:
 | ---- | ----------- | ----- | ---- | ---- |
 | dual seven-segment displays |  LTD6410AG | 12 | stockroom | https://www.digikey.com/en/products/detail/liteon/LTD-6410G/3199123 |
 | PNP transistor | 2N3906 | 24 | stockroom |https://www.digikey.com/en/products/detail/stmicroelectronics/2N3906/603429?utm_adgroup=STMicroelectronics&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Focus%20Suppliers&utm_term=&utm_content=STMicroelectronics&gclid=CjwKCAiAs8acBhA1EiwAgRFdw12wrYv2MVxmmVXYWDWyvkeNP7gP64nfoixennjbvF99BNkyktPERBoCLjsQAvD_BwE |
-| 3 to 8 decoders | DM74LS139 | 5 | stockroom | https://www.digikey.com/en/products/detail/onsemi/DM74LS139N/3301 |
+| 3 to 8 decoders | DM74LS139 | 3 | stockroom | https://www.digikey.com/en/products/detail/onsemi/DM74LS139N/3301 |
 | microservos | SG90 | 2 | stockroom | https://www.digikey.com/en/products/detail/gearbox-labs/PART-MICRO-SERVO-SG-90-ANALOG/16159912?utm_adgroup=Battery%20Products&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=Battery%20Products&gclid=CjwKCAiAs8acBhA1EiwAgRFdwwgGRt2WqlFrkcezkk1UxbvZydEK6MfRLG4xHJhkBX_pS5LJn3NbQhoCLuUQAvD_BwE |
 | neopixel strip | WS2812 | 1 | self-owned | https://www.aliexpress.us/item/2251801850504415.html?gatewayAdapt=glo2usa4itemAdapt&_randl_shipto=US | 
 | FPGA and MCU | iCE405K,STML432KC | 1,1 | given | | 
