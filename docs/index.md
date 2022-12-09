@@ -39,6 +39,8 @@ What we have yet to finish:
   2. Assemble the breadboard circuit, the clock panel and the servo gearboxes into a compact, cohesive final product. 
   3. Adjust the brightness of the neopixel so that it is less disruptive to people trying to tell time on the clock. 
  
+# Video Demo!
+<iframe width="560" height="315" src="https://youtu.be/fDKwyhOzn4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # Major Components Used
 <!-- The bill of materials should include all the parts used in your project along with the prices and links.  -->
 
