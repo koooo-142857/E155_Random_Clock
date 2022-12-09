@@ -21,7 +21,7 @@ The MCU generates a random array of numbers from 1 to 12 depicting where each nu
 Fig 3. Physical Circuit Diagram 
 
 <div style="text-align: left">
-  <img src="./assets/schematics/PhysicalCircuit.png" alt="logo" width="700" />
+  <img src="../assets/schematics/PhysicalCircuit.png" alt="logo" width="700" />
 </div>
 
 Fig 4. Pinout Chart
