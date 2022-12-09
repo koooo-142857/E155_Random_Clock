@@ -27,6 +27,7 @@ Fig 4. Pinout Chart
   <img src="./assets/schematics/Pinout.png" alt="logo" width="700" />
 </div>
 All signals labeled in Fig 3. can be found on Fig 4 when connecting the system together. The FPGA signal names are also contingent with the corresponding .sv files. The decoder block in Fig 3. is a physical module, with its schematics provided in Fig 5. 
+
 ***
 Fig 5. Decoder Circuit Diagram
 <div style="text-align: left">
