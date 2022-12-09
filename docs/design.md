@@ -60,13 +60,13 @@ Datasheet: https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
  
 Fig. 10 Neopixel Stripes in our Project
 <div style="text-align: left">
-  <img src="./assets/img/20221207_233316.jpg" alt="logo" width="700" />
+  <img src="../assets/img/20221207_233316.jpg" alt="logo" width="700" />
 </div>
  
 Fig. 11 Neopixel diagrams
 
 <div style="text-align: left">
-  <img src="./assets/schematics/NeoData.png" alt="logo" width="700" />
+  <img src="../assets/schematics/NeoData.png" alt="logo" width="700" />
 </div>
  
 At its heart, the neopixel stripe is a string of LED groups, where each LED group is composed of a red, green and blue LED. It takes a very specific data format to generate chormatic colors on each LED group. The color at each group is cascaded from the previous group. This results in a huge range of possible patterns on these stripes. For our purpose, we only need the whole stripe to generate the same color, but that color will change over time. For the specifics of the Neopixel operation, refer to the Neopixel Driver section in this page for a quick look, or the datasheet for in-depth details. 
