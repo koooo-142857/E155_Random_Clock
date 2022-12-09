@@ -3,7 +3,7 @@ layout: page
 title: Documentation
 permalink: /doc/
 ---
-This page comtains the high level schematics of the Random Clock project at the surface level. For in-depth explanation of each sub module, use the Design tab. 
+This page contains the high level schematics of the Random Clock project at the surface level. For in-depth explanation of each sub module, use the Design tab. 
  
 # Schematics
 <!-- Include images of the schematics for your system. They should follow best practices for schematic drawings with all parts and pins clearly labeled. You may draw your schematics either with a software tool or neatly by hand. -->
