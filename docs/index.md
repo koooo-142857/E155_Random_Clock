@@ -12,6 +12,9 @@ exclude: true
 # Project Abstract
 This website describes the design of a very confusing clock. Similar to traditional wall clocks, it has twelve numbers arranged around a panel, as well as minute and hour hands. However, the numbers 1 - 12 around the panel are randomized every hour, and the clock hands will always point to the correct numbers to tell the current time. The logic circuit behind this clock is realized with an MCU and FPGA pair. See the Project Motivation section for details. 
 
+<div style="text-align: left">
+  <img src="./assets/img/Clock_DEMO.png" alt="logo" width="500" />
+</div>
 
 
 
