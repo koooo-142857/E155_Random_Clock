@@ -16,7 +16,7 @@ Fig 2. Overall System Block Diagram
 
 
 
-The MCU generates a random array of numbers from 1 to 12 depicting where each number will go on the clock panel each hour. This information is sent to the FPGA by SPI. The FPGA uses a shift register to receive the information, and decodes it into a format suitable for the seven-segment displays. The MCU also takes the random array and encodes it into servo positions for the minute and hour hand, telling them where to turn as time passes. 
+The MCU generates a random array of numbers from 1 to 12 depicting where each number will go on the clock panel each hour. This information is sent to the FPGA by SPI. The FPGA uses a shift register to receive the information, and decodes it into a format suitable for the seven-segment displays. The MCU also takes the random array and encodes it into servo positions for the minute and hour hand, telling them where to turn as time passes. For greater details of the designs, visit the "Design" tab of the website. 
 ***
 Fig 3. Physical Circuit Diagram 
 
@@ -28,7 +28,7 @@ Fig 4. Pinout Chart
 <div style="text-align: left">
   <img src="../assets/schematics/Pinout.png" alt="logo" width="700" />
 </div>
-All signals labeled in Fig 3. can be found on Fig 4 when connecting the system together. The FPGA signal names are also contingent with the corresponding .sv files. The decoder block in Fig 3. is a physical module, with its schematics provided in Fig 5. 
+All signals labeled in Fig 3. can be found on Fig 4 when connecting the system together. The FPGA signal names are also contingent with the corresponding .sv files. The decoder block in Fig 3. is a physical module, with its schematics provided in Fig 5.
 
 ***
 Fig 5. Decoder Circuit Diagram
