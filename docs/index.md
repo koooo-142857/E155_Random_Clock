@@ -96,6 +96,7 @@ What we have yet to finish:
 <div style="text-align: left">
   <img src="./assets/img/20221208_170939.jpg" alt="logo" width="700" />
 </div>
+ 
 # Source Code Overview
 
 The source code for the project is located in the Github repository [here](https://github.com/koooo-142857/E155_Random_Clock/tree/main/src).
