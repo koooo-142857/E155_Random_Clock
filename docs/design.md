@@ -45,11 +45,13 @@ Being able to generate 1's and 0's is the first step, knowing when to generate t
 
 Lastly, the RST_control is responsible for creating the rainbow effect. The neopixel needs a periodic quiet period, where there are no signals sent in, in order to know the reading frames for the signals that came in. Abusing this fact allows us to very elegantly produce the rainbow effect in very little additional hardware. The RST_control is high (0.8s) for the majority of the time, where the data is transparent. When RST_control is low (for 60us), the datastream is stopped. By making the datastream stop one PWM cycle after a complete 24 bit dataframe is sent, the next datastream read by the neopixels will be shifted to the left, resulting in a different color being produced. After a few datastream stops, the color on the Neopixels will have completely changed. See the chart below for a demonstration. 
 
-| time (s) | # of stops generated | LED dataframe (G,R,B) | Rendered Color |
+| time (s) | # of stops generated | LED dataframe | Rendered Color (G,R,B)|
+| --- | ---------- | ---------- | -------------- |
 | 0 | 0 | 0b0000 0000 1111 1111 0000 0000 | (0,255,0) |
 | 0.8 | 1 | 0b0000 0001 1111 1110 0000 0000 | (1,254,0) |
 | 1.6 | 2 | 0b0000 0011 1111 1100 0000 0000 | (3,252,0) |
-...
+| ... | ... | ... | ... |
+| 6.4 | 8 | 0b1111 1111 0000 0000 0000 0000 | (255,0,0) (Green!) |
 
 
 
