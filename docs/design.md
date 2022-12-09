@@ -17,8 +17,9 @@ The SPI Shift Register, shown in Fig. 6, is responsible for receiving SPI inform
 ## Mutiplexed Display
 Fig. 7
 <div style="text-align: left">
-  <img src="../assets/schematics/Num_Distribute.jpg" alt="logo" width="1000" />
+  <img src="../assets/schematics/Num_Distribute.JPG" alt="logo" width="1000" />
 </div>
+
 
 ## Neopixel Driver
 
