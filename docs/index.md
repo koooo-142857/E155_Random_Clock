@@ -55,6 +55,36 @@ What we have yet to finish:
 **Total cost: $0**
 
 # Gallery
+<div style="text-align: left">
+  <img src="./assets/img/20221208_170922.JPG" alt="logo" width="100" />
+</div>
+<div style="text-align: left">
+  <img src="./assets/img/20221208_170927.JPG" alt="logo" width="100" />
+</div>
+
+<div style="text-align: left">
+  <img src="./assets/img/20221208_170642.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221207_233316.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_163001.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_171021.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_171133.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_170936.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_171039.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_171144.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_171023.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_170944.JPG" alt="logo" width="100" />
+</div><div style="text-align: left">
+  <img src="./assets/img/20221208_170939.JPG" alt="logo" width="100" />
+</div>
 # Source Code Overview
 
 The source code for the project is located in the Github repository [here](https://github.com/koooo-142857/E155_Random_Clock/tree/main/src).
