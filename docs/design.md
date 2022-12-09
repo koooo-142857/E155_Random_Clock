@@ -81,7 +81,7 @@ The hands of the clock are moved by two 90 degree micro servos.  These require a
  
 
 <div style="text-align: left">
-  <img src="../assets/schematics/image.png" alt="logo" width="1000" />
+  <img src="../assets/img/image.png" alt="logo" width="1000" />
 </div>
 
 
