@@ -3,7 +3,7 @@ layout: page
 title: Design
 permalink: /design/
 ---
-## FPGA Design
+# FPGA Design
 Fig. 6 top level FPGA schematic
 <div style="text-align: left">
   <img src="../assets/schematics/FPGA.png" alt="logo" width="1000" />
@@ -11,10 +11,10 @@ Fig. 6 top level FPGA schematic
 
 There are three significant design blocks in the FPGA design for the random clock: the SPI shift register, the Neopixel driver, and the  multiplexed display module. You may find other helper modules in the diagrams and source codes, but they are less important in making the Random Clock function. 
 
-# SPI Shift Registers
+## SPI Shift Registers
 The SPI Shift Register, shown in Fig. 6, is responsible for receiving SPI information on the location of each number on the clock. This block is asynchronous in that it is driven by the serial clock, not the on board clock. On each posedge, one bit from the sdi line is shifted into the clock_num bus. Since the SPI signals are 96 bits long (12 numbers on a clock, each number is represented as an 8 bit char, hence 8 times 12 is 96), the clock_num internal signal is also 96 bits long. The bit_rearrange module is a simple combinational logic that extracts each clock digit from the clock_num bus. 
  
-# Mutiplexed Display
+## Mutiplexed Display
 Fig. 7 Num_Distribute schematic
 <div style="text-align: left">
   <img src="../assets/schematics/Num_Distribute.JPG" alt="logo" width="1000" />
@@ -25,7 +25,7 @@ The Num_Distribute module contains the display multiplexer. In order to drive 24
 Note that although the neopixel driver is instantiated here, it does not interact with any other modules. Its details will be given in the next section. 
 
 
-# Neopixel Driver
+## Neopixel Driver
 Fig. 8 Neopixel Driver Schematic
 
 <div style="text-align: left">
@@ -55,7 +55,7 @@ Lastly, the RST_control is responsible for creating the rainbow effect. The neop
 
 
 
-## MCU Design
+# MCU Design
 
 The Microcontroller that was used was the STM32L432KC (reference manual: https://pages.hmc.edu/brake/class/e155/fa22/assets/doc/rm0394-stm32l41xxx42xxx43xxx44xxx45xxx46xxx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf).  The code consisted of a main function, including everything needed  to initialize the functions present, and step through timestamps, as well as additional functions and header files for random number generation and SPI.  SMSIS was used across all files. 
 
@@ -122,7 +122,7 @@ SPI and random number generation are done in the function getSequence12_SPI.  Th
 
  
 
-### Mechanical Elements
+# Mechanical Elements
 
  
 
