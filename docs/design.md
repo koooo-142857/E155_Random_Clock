@@ -137,6 +137,7 @@ The 7-segment display was wired with an enable system similar to lab 2 and 3, ex
 The seven-segment LED display wiring was done by setting up a truth table, and finding the logic of how each of three decoders should output:
 
 |  en[4:0] | out[24:0]   | decoder (out of three)  |
+| ---- | ----------- | ----- | ---- | ---- |
 
 | 0 0000  |  1111_1111 1111_1111 1111_1110 |  1 |
 
